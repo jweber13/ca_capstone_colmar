@@ -1,0 +1,186 @@
+/* Universal Styles */
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+    opacity: 0.9;
+    box-sizing: border-box;
+    margin-top:0;
+    padding-top:0;
+    font-size: 24px;
+    font-family: "Roboto";
+    color: #202020;
+}
+
+body {
+    margin-top:0;
+    padding-top:0;
+    margin-left: 0;
+}
+
+.article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 2.66rem;
+
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 1rem;
+    z-index: 100;
+    width: 100%;
+    height: 2.66rem;
+    background-color: white;
+    top: 0;
+    box-sizing: border-box;  
+}
+
+header #logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+header span {
+    font-size: 1.33rem;
+}
+
+#colmar {
+    font-weight: bold;
+}
+
+#academy {
+    color: darkgray ;
+}
+
+header #logo img{
+    width: 2rem;
+    height: 2.5rem;
+}
+
+.nav-top li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 .3rem;
+}
+
+.nav-top {
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+
+/* Intro Section */
+
+#intro-section {
+    padding: 1.33rem 1rem;
+    width: 100%;
+}
+
+#intro-section .content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#intro-section img{
+    width: 60%;
+}
+
+#intro-section #statement{
+    width: 40%;
+}
+
+#intro-section #start-box {
+    background-color: #202020;
+    color: darkgray;
+    padding: .33rem 0; /* space top-bottom 8px in 'start here' */
+    margin-left: 1rem;
+}
+
+/* Info Section */
+#info-section {
+    background-color: white;
+    width: 100%;
+    padding: 1.33rem 1rem;
+}
+
+#info-section .content {
+    display: flex;
+    text-align: left;
+}
+
+#info-section .info-quote {
+    width: 60%;
+    flex-direction: column;
+    border-right: 2px solid lightgray;
+}
+
+#info-section .info-quote img {
+
+}
+
+#info-section .info-nav {
+    width: 40%;
+}
+
+#info-section 
+.navbox,
+.navbox2 {
+    display: flex;
+    padding: .66rem;
+    border-top: 2px solid lightgray;
+}
+
+#info-section .navbox2 {
+    background-color: lightgray;
+}
+
+#info-section .nav-box img{
+    width: 35%;
+    height: auto;
+}
+
+#info-section .textbox {
+    width: 65%;
+    padding: 2rem;
+}
+
+
+
+/* Learning Section */
+#learning-section {
+    width: 100%;
+    padding: 1.33rem 1rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: white;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+footer .content {
+
+}
+
+footer #copyright {
+    color: #202020;
+}
+

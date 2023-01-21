@@ -1,0 +1,102 @@
+/* Universal Styles */
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+    opacity: 0.9;
+    box-sizing: border-box;
+    margin-top:0;
+    padding-top:0;
+    font-size: 24px;
+    color: #202020;
+}
+
+body {
+    margin-top:0;
+    padding-top:0;
+    margin-left: 0;
+}
+
+.article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 3rem;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 1rem;
+    z-index: 100;
+    width: 100%;
+    height: 2.66rem;
+    background-color: white;
+    top: 0;
+}
+
+header #logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+header span {
+    font-size: 1.33rem;
+}
+
+#colmar {
+    font-weight: bold;
+}
+
+#academy {
+    color: darkgray ;
+}
+
+header #logo img{
+    width: 2rem;
+    height: 2.5rem;
+}
+
+.nav-top li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 .3rem;
+}
+
+.nav-top {
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+
+/* Intro Section */
+
+#intro-section {
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: white;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+footer .content {
+
+}
+
+footer #copyright {
+    color: #202020;
+}
+
