@@ -6,6 +6,7 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 a {
+    text-decoration: none;
     color: inherit;
 }
 
@@ -248,9 +249,143 @@ color: white;
     }
 }
 
-/* Course */
+/* Course Section */
+
+.course-section {
+    padding: 2rem 3.5rem;
+}
+
+.course-section h2 {
+    text-align: center;
+}
+
+.course-section .content {
+    display: flex;
+}
+
+.course-section .coursebox {
+    flex-basis: 33%; /* initial width */
+    margin: 1rem;
+    background-color: white;
+}
+
+.course-section .coursebox .text-content {
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course h3,
+.course h4 {
+    padding-bottom: .5rem;
+}
+
+@media only screen and (max-width: 770px) {
+    .course-section {
+        padding: 2rem 1rem;
+        background-color: white;
+    }
+
+    .course-section .content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .coursebox {
+        margin: .25rem 0;
+    }
+
+    .coursebox .text-content {
+        background-color: lightgray;
+    }
+
+    .coursebox h3 {
+        padding-bottom: 0;
+    }
+
+    .coursebox .media-container,
+    .coursebox h4,
+    .coursebox p {
+        display: none;
+    }
+}
 
 /* Thesis */
+
+.thesis-section {
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.thesis-container {
+    display: flex;
+}
+
+.thesis-section h2 {
+    text-align: center;
+}
+
+.thesis-container .content {
+    width: 60%;
+    padding: 2rem 1.5rem 2rem 0;
+}
+
+.thesis-container .content h3 {
+    padding: .5rem 0;
+    font-size: 1.5rem;
+}
+
+.thesis-container .subcontent h4 {
+    font-size: 1.5rem;
+}
+
+.thesis-container .subcontent {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 0;
+}
+
+.thesis-container .subcontent .navbox {
+    display: flex;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.thesis-container .subcontent .navbox:first-child {
+    padding-top: 0;
+}
+
+.thesis-container .subcontent .navbox .media-container {
+    width: 40%;
+}
+
+.thesis-container .subcontent .textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding-left: 1rem;
+}
+
+@media only screen and (max-width: 770px) {
+    .thesis-container h3,
+    .thesis-container p,
+    .thesis-container .subcontent {
+        display: none;
+    }
+
+    .thesis-section {
+        padding-bottom: 1.5rem;
+    }
+
+    .thesis-section .thesis-container {
+        padding: 0;
+    }
+
+    .thesis-container .content {
+        width: 100%;
+        padding: 0;
+        margin-right: 0;
+    }
+}
 
 /* Footer */
 footer {
